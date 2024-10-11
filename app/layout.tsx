@@ -5,13 +5,7 @@ import { ReactNode } from "react";
 import CustomProvider from "./components/CustomProvider";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-export default function RootLayout({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning>
